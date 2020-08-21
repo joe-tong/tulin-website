@@ -1,0 +1,438 @@
+/*#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+	height: 8px;
+	width: 8px;
+	margin: -4px 0 0 -4px;
+	border-radius: 100%;
+}*/
+
+
+/*-----------------------------------------*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Microsoft YaHei';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: lighter;
+}
+
+a {
+	color: currentcolor;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.section {
+	overflow: hidden;
+}
+
+.section-one {
+	background-image: url(../img/bg_one.png);
+	background-size: cover;
+}
+
+.section-two,
+.section-three,
+.section-four {
+	background-image: url(../img/bg_two.png);
+	background-size: cover;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 6px 30px;
+	width: 100%;
+	color: #fff;
+	z-index: 99;
+	box-sizing: border-box;
+}
+
+.logo {
+	font-size: 24px;
+	font-style: italic;
+	letter-spacing: 4px;
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-item {
+	padding: 0 15px;
+	line-height: 2;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+	cursor: pointer;
+}
+
+
+/*--------------------------------------------------------*/
+
+.index-carousel {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+}
+
+.index-carousel-img {
+	width: 640px;
+}
+
+.index-carousel-slogan {
+	margin-left: 82px;
+	color: #fff;
+	text-shadow: 0 14px 17px rgba(0, 0, 0, 0.3);
+	letter-spacing: 13px;
+	font-size: 32px;
+	font-family: PingFangSC
+}
+
+.section-one-container {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	justify-content: center;
+	bottom: 100px;
+	width: 70%;
+	transform: translateX(-50%);
+}
+
+.index-company {
+	line-height: 2;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.index-company-title {
+	line-height: 1.8;
+	font-size: 28px;
+}
+
+.index-company-title:nth-child(2) {
+	margin-bottom: 30px;
+}
+
+.index-company-title-small {
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+/*--------------------------------------------------------*/
+
+.section-two-container {
+	display: flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.section-two .index-company {
+	padding-left: 10%;
+	padding-right: 5%;
+	width: 45%;
+	padding-bottom: 10%;
+}
+
+.section-two-img {
+	width: 55%;
+}
+
+
+/*--------------------------------------------------------*/
+
+.section-three-container {
+	display: flex;
+}
+
+.section-three-lf,
+.section-three-rt {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-three-rt {
+	justify-content: flex-start;
+}
+
+.section-three-lf img {
+	width: 320px;
+}
+
+.section-three-rt img {
+	width: 580px;
+}
+
+
+/*--------------------------------------------------------*/
+
+.section-four-container {
+	display: flex;
+	justify-content: center;
+}
+
+.kx-slogan {
+	text-shadow: 0 6px 14px rgba(0, 0, 0, 0.11);
+}
+
+.kx-slogan-english {
+	font-size: 58px;
+}
+
+.kx-slogan-chinese {
+	line-height: 2.6;
+	font-size: 38px;
+}
+
+.kx-contact {
+	position: absolute;
+	top: 70%;
+	left: 65%;
+	line-height: 2;
+}
+
+.keep-record {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	padding: 0 20px;
+	line-height: 2;
+	font-size: 12px;
+}
+
+.kx-company {
+	margin-right: 8px;
+}
+
+.qrcode-img {
+	margin: 10px auto;
+	width: 115px;
+}
+
+.record-link {
+	color: currentcolor;
+}
+
+
+/*--------------------------------------------------------*/
+
+@media only screen and (min-width: 1921px) {
+	.index-carousel {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.section-one-container {
+		bottom: 150px;
+	}
+	.index-company {
+		font-size: 20px;
+	}
+	.index-company-title {
+		font-size: 32px;
+	}
+	.section-three-lf img {
+		width: 390px;
+	}
+	.section-three-rt img {
+		width: 720px;
+	}
+	.kx-slogan-english {
+		font-size: 64px;
+	}
+	.kx-slogan-chinese {
+		font-size: 42px;
+	}
+}
+
+
+/*--------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	.index-carousel {
+		top: 35%;
+		transform: translate(-10%, -35%);
+	}
+	.index-carousel-img {
+		width: 560px;
+	}
+	.index-carousel-slogan {
+		margin-left: 72px;
+		font-size: 24px;
+	}
+	.index-company {
+		font-size: 15px;
+	}
+	.section-two-img img {
+		width: 1000px;
+	}
+	.section-three-lf img {
+		width: 270px;
+	}
+	.section-three-rt img {
+		width: 470px;
+	}
+	.kx-slogan-english {
+		font-size: 44px;
+	}
+	.kx-slogan-chinese {
+		font-size: 30px;
+	}
+}
+
+
+/*--------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.index-carousel {
+		top: 25%;
+		transform: translate(-50%, -25%);
+	}
+	.index-carousel-img {
+		width: 560px;
+	}
+	.index-carousel-slogan {
+		margin-left: 72px;
+		font-size: 24px;
+	}
+	.index-company {
+		font-size: 14px;
+	}
+	.index-company-title {
+		line-height: 1.8;
+		font-size: 24px;
+	}
+	.index-company-title:nth-child(2) {
+		margin-bottom: 20px;
+	}
+	.index-company-title-small {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	.section-two-img img {
+		width: 900px;
+	}
+	.section-three-lf img {
+		width: 220px;
+	}
+	.section-three-rt img {
+		width: 360px;
+	}
+	.kx-slogan-english {
+		font-size: 32px;
+	}
+	.kx-slogan-chinese {
+		font-size: 20px;
+	}
+}
+
+
+/*--------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+	.nav-list {
+		flex-direction: column;
+		font-size: 14px;
+	}
+	.index-carousel {
+		width: 0;
+		opacity: 0;
+	}
+	.index-carousel-img {
+		width: 560px;
+	}
+	.index-carousel-slogan {
+		margin-left: 72px;
+		font-size: 24px;
+	}
+	.index-company {
+		font-size: 14px;
+	}
+	.index-company-title {
+		line-height: 1.8;
+		font-size: 24px;
+	}
+	.index-company-title:nth-child(2) {
+		margin-bottom: 20px;
+	}
+	.index-company-title-small {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	.section-two .index-company {
+		width: 100%;
+	}
+	.section-two-img {
+		width: 0;
+	}
+	.section-two-img img {
+		width: 1000px;
+	}
+	.section-three-lf img {
+		width: 194px;
+	}
+	.section-three-rt {
+		flex: 0;
+		width: 0;
+	}
+	.kx-slogan {
+		padding: 0 30px;
+	}
+	.kx-slogan-english {
+		font-size: 32px;
+	}
+	.kx-slogan-chinese {
+		font-size: 20px;
+	}
+	.qrcode-img {
+		width: 85px;
+	}
+}

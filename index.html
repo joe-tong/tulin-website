@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8' />
+		<title>图灵工作室</title>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<link rel='stylesheet' type='text/css' href='dist/jquery.fullpage.css' />
+		<link rel='stylesheet' type='text/css' href='css/style.css' />
+		<link rel='stylesheet' type='text/css' href='css/animate.css' />
+		<link rel='icon' href='favicons/favicon-32x32.ico' />
+	</head>
+
+	<body>
+		<div class='header'>
+			<div class='logo'>图灵工作室</div>
+			<ul id='nav' class='nav-list'>
+				<li class='nav-item'>
+					<a href='#first'>工作室介绍</a>
+				</li>
+				<li class='nav-item'>
+					<a href='#second'>技术服务</a>
+				</li>
+				<li class='nav-item'>
+					<a href='#fourth'>联系我们</a>
+				</li>
+			</ul>
+		</div>
+		<div id='fullpage'>
+			<div class='section section-one'>
+				<div class='index-carousel'>
+					<img class='index-carousel-img' src='img/tech (1).png' />
+					<img />
+					<p class='index-carousel-slogan'>你只管创业、我负责技术</img>
+				</div>
+				<div class='section-one-container'>
+					<div class='index-company animated'>
+						<h4 class='index-company-title'>工作室介绍</h4>
+						<h4 class='index-company-title'>STUDIO INTRODUCTION</h4>
+						<p class='index-company-desc'>图灵工作室由来自一线互联网企业核心人员组成的一群有志向小伙伴，技术、实力在业界都是公认的，我们的宗旨就是帮助想创业的人，让创业的门槛更低。</p>
+					</div>
+				</div>
+			</div>
+			<div class='section section-two'>
+				<div class='section-two-container'>
+					<div class='index-company animated slideOutLeft'>
+						<h4 class='index-company-title'>服务介绍</h4>
+						<h4 class='index-company-title'>PRODUCT INFORMTION</h4>
+						<h5 class='index-company-title-small'>企业网站建设</h5>
+						<p class='index-company-desc'>简洁大方，让你的公司更加出彩 </p>
+						<h5 class='index-company-title-small'>小程序</h5>
+						<p class='index-company-desc'>功能丰富、流畅度高，这就是你想要的小程序</p>
+						<h5 class='index-company-title-small'>公众号</h5>
+						<p class='index-company-desc'>只要你敢提需求，我就会让你满意</p>
+						<h5 class='index-company-title-small'>毕业设计</h5>
+						<p class='index-company-desc'>帮助超过100位学生完成满意度设计</p>
+					</div>
+					<div class='section-two-img animated slideOutUp'>
+						<img src='img/soft.jpg' />
+					</div>
+				</div>
+			</div>
+			<div class='section section-three'>
+				<div class='section-three-container'>
+					<div class='section-three-lf animated slideOutLeft'>
+						<img data-src='img/head.jpg' style="width: 365px;height:auto"/>
+					</div>
+					<div class='section-three-rt animated slideOutRight'>
+						<img data-src='img/app.jpg' style="width: 800px;height:auto"/>
+					</div>
+				</div>
+			</div>
+			<div class='section section-four'>
+				<div class='section-four-container'>
+					<div class='kx-slogan animated zoomOut'>
+						<h3 class='kx-slogan-english'>You Just Start The Business. I'll Take Care Of The Technology</h3>
+						<h3 class='kx-slogan-chinese'>你只管创业、我负责技术</h3>
+					</div>
+				</div>
+				<!--<div class='kx-contact'>
+					<p class='kx-company'>深圳可信物联科技有限公司</p>
+					<p class='kx-location'>深圳市南山区高新中区科苑大道16号金融科技大厦A座23楼</p>
+					<p class='kx-location'>咨询热线：0755-26921685</p>
+				</div>-->
+
+				<div class='keep-record'>
+					<img class='qrcode-img' src='img/qrcode_for_gh_6946aac823ab_344.jpg' />
+					<p>
+						<span class='kx-company'>图灵工作室</span>
+						<!-- <a class='record-link' target='_blank' href='http://www.miitbeian.gov.cn/'>备案号：粤ICP备18015655号</a> -->
+					</p>
+					<!-- <p class='kx-location'><span class='kx-company'>深圳市南山区高新中区科苑大道16号金融科技大厦A座23楼</span></p> -->
+					<p>咨询热线：15797862806</p>
+				</div>
+			</div>
+			<div class=''></div>
+		</div>
+
+		<script src='js/jquery.min.js'></script>
+		<script src='dist/jquery.fullpage.min.js'></script>
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					// 导航
+					menu: '#nav',
+					lockAnchors: false,
+					anchors: ['first', 'second', 'third', 'fourth'],
+					navigation: true,
+					navigationPosition: 'right',
+					// navigationTooltips: ['firstSlide', 'secondSlide'],
+					showActiveTooltip: false,
+					slidesNavigation: false,
+					slidesNavPosition: 'bottom',
+					// slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+
+					// 滚动
+					css3: true,
+					fitToSection: true,
+					fitToSectionDelay: 1000,
+					scrollBar: false,
+					easing: 'easeInOutCubic',
+					easingcss3: 'ease',
+
+					// 可访问
+					keyboardScrolling: true,
+					animateAnchor: true,
+					recordHistory: true,
+
+					lazyLoading: true,
+
+					// 事件
+					onLeave: function(index, nextIndex, direction) {
+						if(index == 1) {
+							$('.section-one').find('.index-company').removeClass('slideInUp').addClass('slideOutDown');
+						}
+						if(index == 2) {
+							$('.section-two').find('.index-company').removeClass('slideInLeft').addClass('slideOutLeft');
+							$('.section-two').find('.section-two-img').removeClass('slideInUp').addClass('slideOutUp');
+						}
+						if(index == 3) {
+							$('.section-three').find('.section-three-lf').removeClass('slideInLeft').addClass('slideOutLeft');
+							$('.section-three').find('.section-three-rt').removeClass('slideInRight').addClass('slideOutRight');
+						}
+						if(index == 4) {
+							$('.section-four').find('.kx-slogan').removeClass('zoomIn').addClass('zoomOut');
+						}
+					},
+					afterLoad: function(anchorLink, index) {
+						if(index == 1) {
+							$('.section-one').find('.index-company').removeClass('slideOutDown').addClass('slideInUp');
+						}
+						if(index == 2) {
+							$('.section-two').find('.index-company').removeClass('slideOutLeft').addClass('slideInLeft');
+							$('.section-two').find('.section-two-img').removeClass('slideOutUp').addClass('slideInUp');
+						}
+						if(index == 3) {
+							$('.section-three').find('.section-three-lf').removeClass('slideOutLeft').addClass('slideInLeft');
+							$('.section-three').find('.section-three-rt').removeClass('slideOutRight').addClass('slideInRight');
+						}
+						if(index == 4) {
+							$('.section-four').find('.kx-slogan').removeClass('zoomOut').addClass('zoomIn');
+						}
+					},
+				});
+			});
+		</script>
+	</body>
+
+</html>
